@@ -19,19 +19,17 @@ class RouterComponent extends React.Component {
             hideTabBar={true}
           />
           <Tabs key="MainRoot" tabBarPosition="bottom">
-          <Scene key="Main" component={MainComponent} title="Main" icon=""/>
+          <Scene key="Main" component={MainComponent} title="Main"/>
             <Scene
               key="Basketball"
               component={BasketballComponent}
               title="Basketball"
-              icon=""
             />
-            <Scene key="Bets" component={BetsComponent} title="Bets" icon=""/>
+            <Scene key="Bets" component={BetsComponent} title="Bets"/>
             <Scene
               key="Football"
               component={FootballComponent}
               title="Football"
-              icon=""
             />
           </Tabs>
         </Scene>

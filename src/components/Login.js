@@ -36,7 +36,6 @@ class LoginComponent extends Component {
   }
 
   logIn() {
-    console.log("asdasd")
     const {username, password} = this.state;
     firebase.auth().signInWithEmailAndPassword(username, password)
     .then(this.LoginSuccefull)

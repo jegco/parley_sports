@@ -1,18 +1,26 @@
 import React, { Component } from "react";
 import { TextField } from "react-native-material-textfield";
-import { View } from 'react-native';
-import { ListView } from './lib/index';
+import { View, Button } from 'react-native';
+import gamesService from "../api/games";
 
 class BasketballComponent extends Component {
 
-  constructor(){
-    
-  }
+  // componentWillMount() {
+  //   this.getBasketBallGames()
+  // }
+
+  // async getBasketBallGames() {
+  //   const response = await gamesService.getGames()
+  //   // console.log(response.data)
+  // }
 
   render() {
     return (
       <View>
-        <ListView />
+      <Button 
+        styles={{width: 10, height: 50}}
+        onPress={() =>  {Actions.Football()}}
+        title="Footbal"/>
       </View>
     );
   }

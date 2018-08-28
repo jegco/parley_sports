@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const url = "https://maps-1510612754588.firebaseio.com/games";
+const url = "https://maps-1510612754588.firebaseio.com/games.json";
 
 const gamesService  = {
-    getGames: async () =>{
-        return await axios.get(url);
+    getGames: () =>{
+        return axios.get(url);
     }
 }
 
