@@ -1,3 +1,3 @@
 export default function* getBets() {
-    console.log('Hello Sagas!')
+    console.log('Hello Sagas!');
   }

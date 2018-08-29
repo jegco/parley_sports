@@ -6,6 +6,6 @@ const gamesService  = {
     getGames: () =>{
         return axios.get(url);
     }
-}
+};
 
 export default gamesService;

@@ -1,11 +1,11 @@
-import axios from 'axios';
+import axios from "axios";
 
 const url = "https://maps-1510612754588.firebaseio.com/bets.json";
 
-const betsService  = {
-    getBets: async () =>{
-        return await axios.get(url);
-    }
-}
+const betsService = {
+  getBets: () => {
+    return axios.get(url);
+  }
+};
 
 export default betsService;
